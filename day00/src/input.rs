@@ -1,3 +1,3 @@
-pub fn get_input() -> Vec<u32> {
-    vec![]
+pub fn get_input() -> &'static str {
+    ""
 }

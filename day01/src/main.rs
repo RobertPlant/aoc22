@@ -24,8 +24,8 @@ fn calc(input_data: &'static str, top: usize) -> usize {
 fn main() {
     let input_data = input::get_input();
 
-    println!("Found {:?}", calc(input_data, 1));
-    println!("Found {:?}", calc(input_data, 3));
+    println!("Found P1 {:?}", calc(input_data, 1));
+    println!("Found P2 {:?}", calc(input_data, 3));
 }
 
 #[cfg(test)]
