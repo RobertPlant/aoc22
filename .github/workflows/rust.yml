@@ -45,3 +45,11 @@ jobs:
       - name: Run tests Day 3
         run: cargo test --verbose
         working-directory: day03
+
+      - name: Run Day 4
+        run: cargo run --verbose
+        working-directory: day04
+
+      - name: Run tests Day 4
+        run: cargo test --verbose
+        working-directory: day04
