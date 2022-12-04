@@ -16,6 +16,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Install latest nightly
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: nightly
+          override: true
+
       - name: Run Day 1
         run: cargo run --verbose
         working-directory: day01
@@ -23,3 +29,19 @@ jobs:
       - name: Run tests Day 1
         run: cargo test --verbose
         working-directory: day01
+
+      - name: Run Day 2
+        run: cargo run --verbose
+        working-directory: day02
+
+      - name: Run tests Day 2
+        run: cargo test --verbose
+        working-directory: day02
+
+      - name: Run Day 3
+        run: cargo run --verbose
+        working-directory: day03
+
+      - name: Run tests Day 3
+        run: cargo test --verbose
+        working-directory: day03

@@ -11,6 +11,6 @@ mod tests {
 
     #[test]
     //fn test() {
-    //    assert_eq!(call(), )
+    //    assert_eq!(calc(), )
     //}
 }
